@@ -94,7 +94,7 @@ with col5:
         description="Need a fresh campaign idea? This tool helps brainstorm concepts based on your goals and offer.",
         emoji="🎯",
         url="https://burgo-campaign-concept-generator.streamlit.app/",
-        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Campaign-Concept-Generator-03-18-2025.png"
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Campaign-Concept-Generator-%C2%B7-Streamlit-03-17-2025_09_50_PM.png"
     )
 
 with col6:

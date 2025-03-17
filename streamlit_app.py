@@ -85,5 +85,17 @@ with col4:
         image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Headline-Comparator-03-17-2025_07_45_PM.png"
     )
 
+# Third row (new app!)
+col5, _ = st.columns([1, 1])  # Leave second column empty for now
+
+with col5:
+    app_card(
+        title="Campaign Concept Generator",
+        description="Need a fresh campaign idea? This tool helps brainstorm concepts based on your goals and offer.",
+        emoji="🎯",
+        url="https://burgo-campaign-concept-generator.streamlit.app/",
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Campaign-Concept-Generator-%C2%B7-Streamlit-03-17-2025_09_50_PM.png"
+    )
+
 st.markdown("---")
 st.markdown("<p style='text-align: center;'>Made with ❤️ by Burgo</p>", unsafe_allow_html=True)

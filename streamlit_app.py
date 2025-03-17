@@ -85,8 +85,8 @@ with col4:
         image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Headline-Comparator-03-17-2025_07_45_PM.png"
     )
 
-# Third row (new app!)
-col5, _ = st.columns([1, 1])  # Leave second column empty for now
+# Third row
+col5, col6 = st.columns(2)
 
 with col5:
     app_card(
@@ -94,7 +94,16 @@ with col5:
         description="Need a fresh campaign idea? This tool helps brainstorm concepts based on your goals and offer.",
         emoji="🎯",
         url="https://burgo-campaign-concept-generator.streamlit.app/",
-        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Campaign-Concept-Generator-%C2%B7-Streamlit-03-17-2025_09_50_PM.png"
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Campaign-Concept-Generator-03-18-2025.png"
+    )
+
+with col6:
+    app_card(
+        title="Funnel Fixer",
+        description="Audit your funnel copy and get AI-powered suggestions to improve clarity, conversion, and Foolishness — fast. Includes a rewritten version, tone analysis, framework insights, and a ‘Conversion Readiness Score.’",
+        emoji="🛠️",
+        url="https://foolish-funnel-fixer.streamlit.app/",
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Funnel-Fixer-03-18-2025.png"
     )
 
 st.markdown("---")

@@ -29,7 +29,7 @@ with col1:
         description="Generate headlines using proven copywriting frameworks like AIDA, PAS, and more.",
         emoji="📝",
         url="https://foolish-ai-headline-generator.streamlit.app/",
-        image_url="https://githubusercontent.com/MBurgo/foolish-ai-hub/main/assets/Burgo-s-Copywriting-Framework-Headline-Rewriter-%C2%B7-Streamlit-03-17-2025_03_02_PM.png"
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Copywriting-Framework-Headline-Rewriter-%C2%B7-Streamlit-03-17-2025_03_02_PM.png"
     )
 
 with col2:
@@ -38,7 +38,7 @@ with col2:
         description="Auto-generate editorial briefs using trending market topics and news insights.",
         emoji="📄",
         url="https://foolishwriterbriefings.streamlit.app/",
-        image_url="https://githubusercontent.com/MBurgo/foolish-ai-hub/main/assets/Burgo-s-Briefing-App-%C2%B7-Streamlit-03-17-2025_03_02_PM.png"
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Briefing-App-%C2%B7-Streamlit-03-17-2025_03_02_PM.png"
     )
 
 with col3:
@@ -47,7 +47,7 @@ with col3:
         description="Explore realistic investor personas and test messaging with AI-powered simulations.",
         emoji="👥",
         url="https://burgo-ai-persona-project.streamlit.app/",
-        image_url="https://githubusercontent.com/MBurgo/foolish-ai-hub/main/assets/Burgo-s-Persona-Portal-%C2%B7-Streamlit-03-17-2025_03_02_PM.png"
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Persona-Portal-%C2%B7-Streamlit-03-17-2025_03_02_PM.png"
     )
 
 st.markdown("---")

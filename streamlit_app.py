@@ -1,9 +1,9 @@
 import streamlit as st
 
-st.set_page_config(page_title="Foolish AI Hub", layout="wide")
+st.set_page_config(page_title="Burgo's AI Project Hub", layout="wide")
 
-st.title("🤖 Foolish AI Hub")
-st.markdown("Welcome! This is your one-stop-shop for exploring experimental AI tools we're building at The Motley Fool Australia.")
+st.title("🤖 Burgo's Testing AI Hub (Mostly Marketing)")
+st.markdown("Welcome! This is me, messing around with experimental AI tools.")
 st.markdown("---")
 
 # Reusable app card with image preview

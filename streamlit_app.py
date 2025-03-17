@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="Burgo's AI Project Hub", layout="centered")
+st.set_page_config(page_title="Burgo's AI Project Hub", layout="wide")
 
 st.title("🤖 Burgo's Testing AI Hub (Mostly Marketing)")
 st.markdown("Welcome! This is me, messing around with experimental AI tools.")

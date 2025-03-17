@@ -100,7 +100,7 @@ with col5:
 with col6:
     app_card(
         title="Funnel Fixer",
-        description="Audit your funnel copy and get AI-powered suggestions to improve clarity, conversion, and Foolishness — fast.’",
+        description="Audit your funnel copy and get AI-powered suggestions to improve clarity, conversion, and Foolishness — fast.",
         emoji="🛠️",
         url="https://foolish-funnel-fixer.streamlit.app/",
         image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Foolish-Funnel-Fixer-%C2%B7-Streamlit-03-18-2025_09_40_AM.png"

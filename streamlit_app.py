@@ -6,15 +6,37 @@ st.title("🤖 Burgo's Testing AI Hub (Mostly Marketing)")
 st.markdown("Welcome! This is me, messing around with experimental AI tools.")
 st.markdown("---")
 
-# Reusable app card with image preview
+# Reusable app card with image preview and fixed height
 def app_card(title, description, emoji, url, image_url):
     st.markdown(f"""
-    <div style="border:1px solid #ddd; border-radius:15px; padding:20px; margin-bottom:20px; box-shadow: 2px 2px 10px rgba(0,0,0,0.05); text-align: center;">
-        <img src="{image_url}" alt="{title} preview" style="width:100%; border-radius:12px; margin-bottom:15px;" />
-        <h3 style="margin-bottom:0;">{emoji} {title}</h3>
-        <p style="margin-top:5px;">{description}</p>
+    <div style="
+        border:1px solid #ddd; 
+        border-radius:15px; 
+        padding:20px; 
+        margin-bottom:20px; 
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.05); 
+        text-align: center; 
+        min-height: 480px; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between;
+    ">
+        <div>
+            <img src="{image_url}" alt="{title} preview" style="width:100%; border-radius:12px; margin-bottom:15px;" />
+            <h3 style="margin-bottom:0;">{emoji} {title}</h3>
+            <p style="margin-top:5px;">{description}</p>
+        </div>
         <a href="{url}" target="_blank">
-            <button style="background-color:#ffb81c; color:black; padding:8px 20px; border:none; border-radius:10px; font-weight:bold; cursor:pointer;">
+            <button style="
+                background-color:#ffb81c; 
+                color:black; 
+                padding:8px 20px; 
+                border:none; 
+                border-radius:10px; 
+                font-weight:bold; 
+                cursor:pointer; 
+                margin-top:10px;
+            ">
                 Open App
             </button>
         </a>

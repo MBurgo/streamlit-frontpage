@@ -103,7 +103,7 @@ with col6:
         description="Audit your funnel copy and get AI-powered suggestions to improve clarity, conversion, and Foolishness — fast. Includes a rewritten version, tone analysis, framework insights, and a ‘Conversion Readiness Score.’",
         emoji="🛠️",
         url="https://foolish-funnel-fixer.streamlit.app/",
-        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Funnel-Fixer-03-18-2025.png"
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Foolish-Funnel-Fixer-%C2%B7-Streamlit-03-18-2025_09_40_AM.png"
     )
 
 st.markdown("---")

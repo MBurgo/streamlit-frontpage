@@ -6,35 +6,27 @@ st.title("🤖 Burgo's Testing AI Hub (Mostly Marketing)")
 st.markdown("Welcome! This is me, messing around with experimental AI tools.")
 st.markdown("---")
 
-# Corrected app_card function with reliable button styling
+# Reusable app card with support for both live and "coming soon" states
 def app_card(title, description, emoji, url, image_url):
     is_placeholder = url == "#"
+    
     button_html = f"""
         <div style="color: gray; font-style: italic; font-weight: bold; margin-top: 10px;">🚧 Coming Soon</div>
     """ if is_placeholder else f"""
-        <a href="{url}" target="_blank" style="
-            display: inline-block;
-            background-color: #ffb81c;
-            color: black;
-            padding: 8px 20px;
-            border-radius: 10px;
-            font-weight: bold;
-            text-decoration: none;
-            margin-top: 10px;
-        ">Open App</a>
+        <a href="{url}" target="_blank"><button style="background-color:#ffb81c; color:black; padding:8px 20px; border:none; border-radius:10px; font-weight:bold; cursor:pointer; margin-top:10px;">Open App</button></a>
     """
 
     st.markdown(f"""
     <div style="
-        border:1px solid #ddd; 
-        border-radius:15px; 
-        padding:20px; 
-        margin-bottom:20px; 
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.05); 
-        text-align: center; 
-        min-height: 480px; 
-        display: flex; 
-        flex-direction: column; 
+        border:1px solid #ddd;
+        border-radius:15px;
+        padding:20px;
+        margin-bottom:20px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+        text-align: center;
+        min-height: 480px;
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
     ">
         <div>
@@ -126,7 +118,7 @@ with col7:
         description="Segment leads based on AI-predicted likelihood to convert. Hot leads get sales emails. Cold leads get nurtured. Built to reduce churn and increase conversion — directly integrated into Braze.",
         emoji="🔮",
         url="#",
-        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Untitled%20design%20(42).png"
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Predictive-Lead-Scoring.png"
     )
 
 with col8:
@@ -135,7 +127,7 @@ with col8:
         description="Track performance of headlines, CTAs, and copy at the element level — not just the campaign level. Get AI-powered insights and suggestions to optimize creatives and reduce CAC.",
         emoji="🧠",
         url="#",
-        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Untitled%20design%20(42).png"
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Creative-Intelligence.png"
     )
 
 st.markdown("---")

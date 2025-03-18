@@ -6,28 +6,15 @@ st.title("🤖 Burgo's Testing AI Hub (Mostly Marketing)")
 st.markdown("Welcome! This is me, messing around with experimental AI tools.")
 st.markdown("---")
 
-# Updated app_card function with "Coming Soon" logic
+# Fixed app_card function with correct button rendering
 def app_card(title, description, emoji, url, image_url):
     is_placeholder = url == "#"
     button_html = f"""
         <div style="color: gray; font-style: italic; font-weight: bold; margin-top: 10px;">🚧 Coming Soon</div>
     """ if is_placeholder else f"""
-        <a href="{url}" target="_blank">
-            <button style="
-                background-color:#ffb81c; 
-                color:black; 
-                padding:8px 20px; 
-                border:none; 
-                border-radius:10px; 
-                font-weight:bold; 
-                cursor:pointer; 
-                margin-top:10px;
-            ">
-                Open App
-            </button>
-        </a>
+        <a href="{url}" target="_blank"><button style="background-color:#ffb81c; color:black; padding:8px 20px; border:none; border-radius:10px; font-weight:bold; cursor:pointer; margin-top:10px;">Open App</button></a>
     """
-    
+
     st.markdown(f"""
     <div style="
         border:1px solid #ddd; 
@@ -127,7 +114,7 @@ col7, col8 = st.columns(2)
 with col7:
     app_card(
         title="Predictive Lead Scoring (Braze)",
-        description="Segment leads based on AI-predicted likelihood to convert. Hot leads get sales emails. Cold leads get nurtured. Built to reduce churn and increase conversion.",
+        description="Segment leads based on AI-predicted likelihood to convert. Hot leads get sales emails. Cold leads get nurtured. Built to reduce churn and increase conversion — directly integrated into Braze.",
         emoji="🔮",
         url="#",
         image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Untitled%20design%20(42).png"

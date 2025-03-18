@@ -8,6 +8,39 @@ st.markdown("---")
 
 # Reusable app card with image preview and fixed height
 def app_card(title, description, emoji, url, image_url):
+    if url == "#":
+        button_html = """
+        <button disabled style="
+            background-color:#e0e0e0; 
+            color:#777; 
+            padding:8px 20px; 
+            border:none; 
+            border-radius:10px; 
+            font-weight:bold; 
+            cursor: not-allowed; 
+            margin-top:10px;
+        ">
+            Coming Soon
+        </button>
+        """
+    else:
+        button_html = f"""
+        <a href="{url}" target="_blank">
+            <button style="
+                background-color:#ffb81c; 
+                color:black; 
+                padding:8px 20px; 
+                border:none; 
+                border-radius:10px; 
+                font-weight:bold; 
+                cursor:pointer; 
+                margin-top:10px;
+            ">
+                Open App
+            </button>
+        </a>
+        """
+
     st.markdown(f"""
     <div style="
         border:1px solid #ddd; 
@@ -26,22 +59,13 @@ def app_card(title, description, emoji, url, image_url):
             <h3 style="margin-bottom:0;">{emoji} {title}</h3>
             <p style="margin-top:5px;">{description}</p>
         </div>
-        <a href="{url}" target="_blank">
-            <button style="
-                background-color:#ffb81c; 
-                color:black; 
-                padding:8px 20px; 
-                border:none; 
-                border-radius:10px; 
-                font-weight:bold; 
-                cursor:pointer; 
-                margin-top:10px;
-            ">
-                Open App
-            </button>
-        </a>
+        {button_html}
     </div>
     """, unsafe_allow_html=True)
+
+# --- LIVE TOOLS ---
+st.markdown("### 🟢 **Live Tools**")
+st.markdown("---")
 
 # First row
 col1, col2 = st.columns(2)
@@ -106,6 +130,30 @@ with col6:
         image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Foolish-Funnel-Fixer-%C2%B7-Streamlit-03-18-2025_09_40_AM.png"
     )
 
+# --- IN DEVELOPMENT ---
+st.markdown("### 🛠️ **In Development**")
+st.markdown("---")
+
+# Fourth row
+col7, col8 = st.columns(2)
+
+with col7:
+    app_card(
+        title="Predictive Lead Scoring (Braze)",
+        description="Segment leads based on AI-predicted likelihood to convert. Hot leads get sales emails. Cold leads get nurtured. Built to reduce churn and increase conversion — directly integrated into Braze.",
+        emoji="🔮",
+        url="#",
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Predictive-Lead-Scoring.png"
+    )
+
+with col8:
+    app_card(
+        title="Creative Intelligence Platform",
+        description="Track performance of headlines, CTAs, and copy at the element level — not just the campaign level. Get AI-powered insights and suggestions to optimize creatives and reduce CAC.",
+        emoji="🧠",
+        url="#",
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Creative-Intelligence.png"
+    )
+
 st.markdown("---")
 st.markdown("<p style='text-align: center;'>Made with ❤️ by Burgo</p>", unsafe_allow_html=True)
-

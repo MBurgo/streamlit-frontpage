@@ -6,7 +6,7 @@ st.title("🤖 Burgo's Testing AI Hub (Mostly Marketing)")
 st.markdown("Welcome! This is me, messing around with experimental AI tools.")
 st.markdown("---")
 
-# Reusable app card with image preview and fixed height
+# App card for live tools (your original code — do not touch this!)
 def app_card(title, description, emoji, url, image_url):
     st.markdown(f"""
     <div style="
@@ -42,6 +42,35 @@ def app_card(title, description, emoji, url, image_url):
         </a>
     </div>
     """, unsafe_allow_html=True)
+
+# Separate function for coming soon cards
+def coming_soon_card(title, description, emoji, image_url):
+    st.markdown(f"""
+    <div style="
+        border:1px solid #ddd; 
+        border-radius:15px; 
+        padding:20px; 
+        margin-bottom:20px; 
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.05); 
+        text-align: center; 
+        min-height: 480px; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-between;
+        opacity: 0.75;
+    ">
+        <div>
+            <img src="{image_url}" alt="{title} preview" style="width:100%; border-radius:12px; margin-bottom:15px; opacity:0.9;" />
+            <h3 style="margin-bottom:0;">{emoji} {title}</h3>
+            <p style="margin-top:5px;">{description}</p>
+        </div>
+        <div style="margin-top:10px; font-style: italic; color: #666; font-weight: bold;">🚧 Coming Soon</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+# --- LIVE TOOLS ---
+st.markdown("### 🟢 **Live Tools**")
+st.markdown("---")
 
 # First row
 col1, col2 = st.columns(2)
@@ -104,6 +133,28 @@ with col6:
         emoji="🛠️",
         url="https://foolish-funnel-fixer.streamlit.app/",
         image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Foolish-Funnel-Fixer-%C2%B7-Streamlit-03-18-2025_09_40_AM.png"
+    )
+
+# --- IN DEVELOPMENT ---
+st.markdown("### 🛠️ **In Development**")
+st.markdown("---")
+
+col7, col8 = st.columns(2)
+
+with col7:
+    coming_soon_card(
+        title="Predictive Lead Scoring (Braze)",
+        description="Segment leads based on AI-predicted likelihood to convert. Hot leads get sales emails. Cold leads get nurtured. Built to reduce churn and increase conversion — directly integrated into Braze.",
+        emoji="🔮",
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Untitled%20design%20(42).png"
+    )
+
+with col8:
+    coming_soon_card(
+        title="Creative Intelligence Platform",
+        description="Track performance of headlines, CTAs, and copy at the element level — not just the campaign level. Get AI-powered insights and suggestions to optimize creatives and reduce CAC.",
+        emoji="🧠",
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Untitled%20design%20(42).png"
     )
 
 st.markdown("---")

@@ -6,13 +6,22 @@ st.title("🤖 Burgo's Testing AI Hub (Mostly Marketing)")
 st.markdown("Welcome! This is me, messing around with experimental AI tools.")
 st.markdown("---")
 
-# Fixed app_card function with correct button rendering
+# Corrected app_card function with reliable button styling
 def app_card(title, description, emoji, url, image_url):
     is_placeholder = url == "#"
     button_html = f"""
         <div style="color: gray; font-style: italic; font-weight: bold; margin-top: 10px;">🚧 Coming Soon</div>
     """ if is_placeholder else f"""
-        <a href="{url}" target="_blank"><button style="background-color:#ffb81c; color:black; padding:8px 20px; border:none; border-radius:10px; font-weight:bold; cursor:pointer; margin-top:10px;">Open App</button></a>
+        <a href="{url}" target="_blank" style="
+            display: inline-block;
+            background-color: #ffb81c;
+            color: black;
+            padding: 8px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+        ">Open App</a>
     """
 
     st.markdown(f"""

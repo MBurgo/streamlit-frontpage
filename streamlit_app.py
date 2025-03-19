@@ -81,7 +81,7 @@ with col1:
         description="Auto-generate editorial briefs using trending market topics and news insights.",
         emoji="📄",
         url="https://foolishwriterbriefings.streamlit.app/",
-        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Briefing-App-%C2%B7-Streamlit-03-17-2025_03_02_PM.png"
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/image_fx_%20-%202025-03-19T163603.352.jpg"
     )
 
 with col2:
@@ -90,7 +90,7 @@ with col2:
         description="Explore realistic investor personas and test messaging with AI-powered simulations.",
         emoji="👥",
         url="https://burgo-ai-persona-project.streamlit.app/",
-        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Persona-Portal-%C2%B7-Streamlit-03-17-2025_03_02_PM.png"
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/image_fx_%20-%202025-03-19T162947.085.jpg"
     )
 
 # Second row
@@ -102,7 +102,7 @@ with col3:
         description="Need a fresh campaign idea? This tool helps brainstorm concepts based on your goals and offer.",
         emoji="🎯",
         url="https://burgo-campaign-concept-generator.streamlit.app/",
-        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Campaign-Concept-Generator-%C2%B7-Streamlit-03-17-2025_09_50_PM.png"
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/image_fx_%20-%202025-03-19T163822.097.jpg"
     )
 
 with col4:
@@ -111,7 +111,7 @@ with col4:
         description="Audit your funnel copy and get AI-powered suggestions to improve clarity, conversion, and Foolishness — fast.",
         emoji="🛠️",
         url="https://foolish-funnel-fixer.streamlit.app/",
-        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Foolish-Funnel-Fixer-%C2%B7-Streamlit-03-18-2025_09_40_AM.png"
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/image_fx_%20-%202025-03-19T164121.225.jpg"
     )
 
 # Third row
@@ -123,7 +123,7 @@ with col5:
         description="Compare two headlines side-by-side and get instant AI-powered analysis on which one is stronger.",
         emoji="🆚",
         url="https://burgo-headline-comparator.streamlit.app/",
-        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Headline-Comparator-03-17-2025_07_45_PM.png"
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/image_fx_%20-%202025-03-19T164357.351.jpg"
     )
 
 with col6:
@@ -132,7 +132,7 @@ with col6:
         description="Update existing headlines using proven copywriting frameworks like AIDA, PAS, and more.",
         emoji="📝",
         url="https://foolish-ai-headline-generator.streamlit.app/",
-        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/Burgo-s-Copywriting-Framework-Headline-Rewriter-%C2%B7-Streamlit-03-17-2025_03_02_PM.png"
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/image_fx_%20-%202025-03-19T164518.419.jpg"
     )
 
 # --- IN DEVELOPMENT ---

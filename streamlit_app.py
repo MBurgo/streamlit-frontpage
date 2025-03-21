@@ -135,6 +135,22 @@ with col6:
         image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/image_fx_%20-%202025-03-19T164518.419.jpg"
     )
 
+# Fourth row
+col7, col8 = st.columns(2)
+
+with col7:
+    app_card(
+        title="Swipe Tool",
+        description="Adapt great ads from other industries into Foolish copy. This tool reworks structure, tone, and tactics for our audience.",
+        emoji="📥",
+        url="https://burgo-ai-swipe-tool.streamlit.app/",
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/image_fx_%20-%202025-03-21T104825.029.jpg"  # replace with your actual image URL
+    )
+
+with col8:
+    st.empty()  # Leave the second column blank for now
+
+
 # --- IN DEVELOPMENT ---
 st.markdown("### 🛠️ **In Development**")
 st.markdown("---")

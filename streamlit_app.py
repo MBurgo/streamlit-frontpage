@@ -144,11 +144,17 @@ with col7:
         description="Adapt great ads from other industries into Foolish copy. This tool reworks structure, tone, and tactics for our audience.",
         emoji="📥",
         url="https://burgo-ai-swipe-tool.streamlit.app/",
-        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/image_fx_%20-%202025-03-21T104825.029.jpg"  # replace with your actual image URL
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/image_fx_%20-%202025-03-21T104825.029.jpg"
     )
 
 with col8:
-    st.empty()  # Leave the second column blank for now
+    app_card(
+        title="Synthetic Focus Group",
+        description="Drop in draft copy and get instant reactions from 50 AI personas modelled on real Aussie investor segments.",
+        emoji="🧪",
+        url="https://burgo-synthetic-focus-test.streamlit.app/",
+        image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/image_fx_-_synthetic-focus-group.jpg"  # Replace with your actual thumbnail
+    )
 
 
 # --- IN DEVELOPMENT ---

@@ -156,6 +156,17 @@ with col8:
         image_url="https://raw.githubusercontent.com/MBurgo/streamlit-frontpage/refs/heads/main/assets/image_fx_-_synthetic-focus-group.jpg"  # Replace with your actual thumbnail
     )
 
+# Fifth row (new tile addition)
+col9, _ = st.columns(2)
+
+with col9:
+    app_card(
+        title="AI Copywriter Tool",
+        description="Brief in, generate and adapt marketing copy with AI, using structured prompts and linguistic trait sliders.",
+        emoji="✍️",
+        url="https://burgo-mf-ai-copywriter.streamlit.app/",
+        image_url="https://github.com/MBurgo/streamlit-frontpage/blob/main/assets/Image_fx%20(31).jpg?raw=true"  # Replace this URL with the actual thumbnail if you have one
+    )
 
 # --- IN DEVELOPMENT ---
 st.markdown("### 🛠️ **In Development**")
